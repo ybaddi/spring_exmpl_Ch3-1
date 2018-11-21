@@ -28,8 +28,8 @@ public class MainApp {
 		ArticleDataBean iArticleDataA = (ArticleDataBean) context.getBean("articleDataBean");
 //		iArticleDataA.setName("Iam Article A");
 		System.out.println(iArticleDataA.getName());
-		System.out.println(iArticleDataA.getCreationDate());
-		System.out.println(iArticleDataA.getTab2chaines()[0]);
+		System.out.println(iArticleDataA.getPrice());
+		
 		
 		
 		articleMetier.setArticleData(iArticleDataA);

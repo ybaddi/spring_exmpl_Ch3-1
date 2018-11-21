@@ -21,30 +21,10 @@
 	<bean id="articleDataBean"
 		class="com.springExmpl.beans.ArticleDataBean">
 		<!-- collaborators and configuration for this bean go here -->
-		<property name="id" value="1" />
-		<property name="name" value="article 1" />
-		<property name="price" value="10.5" />
-		<property name="creationDate">
-			<bean factory-bean="dateFormater" factory-method="parse">
-				<constructor-arg value="2014-11-12" />
-			</bean>
-		</property>
-
-		<property name="chaine" value="valeur" />
-		<property name="entier" value="10" />
-		<property name="reel" value="10.5" />
-		<property name="booleen" value="true" />
-		<property name="caractere" value="a" />
-		<property name="proprietes">
-			<value> log4j.rootLogger=DEBUG,CONSOLE log4j.logger.article=WARN
-			</value>
-		</property>
-		<property name="localisation" value="fr_FR" />
-		<property name="url" value="http://tudu.sf.net" />
-		<property name="fichier" value="file:c:\\temp\\test.txt" />
-		<property name="classe" value="java.lang.String" />
-		<property name="tab2bytes" value="valeur" />
-		<property name="tab2chaines" value="valeur1,valeur2" />
+		
+		<constructor-arg name="id" value="10" />
+		<constructor-arg name="name" value="article 10" />
+		<constructor-arg name="price" ><null /></constructor-arg> 
 
 	</bean>
 
